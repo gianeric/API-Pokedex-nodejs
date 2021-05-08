@@ -1,6 +1,5 @@
 # Pokemon.json
-
-This repository provides a basic dataset of all Pokemons.
+This repository demonstrates a service developed by consuming the data of Pokemons from the official [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
 
 ## Copyright Notice
 
