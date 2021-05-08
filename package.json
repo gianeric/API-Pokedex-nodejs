@@ -1,0 +1,16 @@
+{
+  "name": "pokemon.json",
+  "version": "1.0.0",
+  "description": "This repository provides a basic dataset of all Pokemons.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
