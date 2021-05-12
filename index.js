@@ -1,18 +1,29 @@
 const express = require('express');
 const pokedex = require('./templates/pokedex.json');
-const app = express();
-const version = '/v1'
+const app     = express();
+const version = 'v1'
 
 app.use(express.json());
 
 //Listar Pokedex
-app.get(version + '/pokedex', (req, res) => {
+app.get('/pokedex/'+version+'/all', (req, res) => {
     res.send(pokedex);
 });
 
-//Listar Pokedex por pokemon
-app.get(version + '/pokedex/:id', (req, res) => {
+//Listar Pokedex por id pokemon
+app.get('/pokedex/'+version+'/id/:id', (req, res) => {   
     let pokedexItens = pokedex.find(pokedexItens => pokedexItens.id == req.params.id);
+   
+    if (!pokedexItens) {
+        res.status(404).send(); return;
+    }
+
+    res.send(pokedexItens);
+});
+
+//Listar Pokedex por nome pokemon 
+app.get('/pokedex/'+version+'/name/:name', (req, res) => {   
+    let pokedexItens = pokedex.find(pokedexItens => pokedexItens.name.english == req.params.name);
 
     if (!pokedexItens) {
         res.status(404).send(); return;
@@ -20,5 +31,17 @@ app.get(version + '/pokedex/:id', (req, res) => {
 
     res.send(pokedexItens);
 });
+
+//Listar Pokedex por tipo
+app.get('/pokedex/'+version+'/type/:type', (req, res) => {   
+    let pokedexItens = pokedex.filter((pokedexItens) => {return pokedexItens.type.indexOf(req.params.type) >= 0});
+
+    if (!pokedexItens) {
+        res.status(404).send(); return;
+    }
+
+    res.send(pokedexItens);
+});
+
 
 app.listen(3000, () => console.log('Listening on port 3000'));
