@@ -9,31 +9,31 @@ You can access the link to demonstrate the all pokemons data
 >http://localhost:3000/pokedex/v1/all
 
 You can access the link to demonstrate the data by passing the pokemon ID filter
->> id: 1
+> id: 1
 
->> http://localhost:3000/pokedex/v1/id/1
+> http://localhost:3000/pokedex/v1/id/1
 
->> id: 809
+> id: 809
 
->> http://localhost:3000/pokedex/v1/id/809
+> http://localhost:3000/pokedex/v1/id/809
 
 You can access the link to demonstrate the data by passing the name of the pokemon as a filter
->> name: Charmander
+> name: Charmander
 
->> http://localhost:3000/pokedex/v1/name/Charmander"
+> http://localhost:3000/pokedex/v1/name/Charmander"
 
 You can access the link to demonstrate the data by passing the pokemon type as a filter
->> type: Fire
+> type: Fire
 
->> http://localhost:3000/pokedex/v1/type/Fire
+> http://localhost:3000/pokedex/v1/type/Fire
 
->> type: Grass
+> type: Grass
 
->> http://localhost:3000/pokedex/v1/type/Grass
+> http://localhost:3000/pokedex/v1/type/Grass
 
->> type: Water
+> type: Water
 
->> http://localhost:3000/pokedex/v1/type/Water
+> http://localhost:3000/pokedex/v1/type/Water
 
 
 
