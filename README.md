@@ -22,8 +22,10 @@ You can access the link to demonstrate the data by passing the name of the pokem
 You can access the link to demonstrate the data by passing the pokemon type as a filter
 >type: Fire
 >http://localhost:3000/pokedex/v1/type/Fire
+
 >type: Grass
 >http://localhost:3000/pokedex/v1/type/Grass
+
 >type: Water
 >http://localhost:3000/pokedex/v1/type/Water
 
