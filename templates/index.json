@@ -1,0 +1,40 @@
+[{
+    "Pokemon_API": [
+        {
+            "type": "GET",
+            "rel": "pokedex",
+            "uri": "http://localhost:3000/pokedex/v1/all"
+        },
+        {
+            "type": "GET",
+            "rel": "id",
+            "example": "1 until 809",
+            "uri1": "http://localhost:3000/pokedex/v1/id/1",
+            "uri2": "http://localhost:3000/pokedex/v1/id/809"
+        },
+        {
+            "type": "GET",
+            "rel": "name",
+            "example": "Charmander",
+            "uri1": "http://localhost:3000/pokedex/v1/name/Charmander"
+        },
+        {
+            "type": "GET",
+            "rel": "all_type_pokemon",
+            "example": "Fire , Grass, Water",
+            "uri1": "http://localhost:3000/pokedex/v1/type/Fire",
+            "uri2": "http://localhost:3000/pokedex/v1/type/Grass",
+            "uri3": "http://localhost:3000/pokedex/v1/type/Water"
+        },
+        {
+            "type": "GET",
+            "rel": "top_high_attack",
+            "uri": "http://localhost:3000/pokedex/v1/attack"
+        },
+        {
+            "type": "GET",
+            "rel": "top_high_defense",
+            "uri": "http://localhost:3000/pokedex/v1/defense"
+        }
+    ]
+}]
