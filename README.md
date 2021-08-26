@@ -36,6 +36,14 @@ You can access the link to demonstrate the data by passing the pokemon type as a
 > http://localhost:3000/pokedex/v1/type/Water
 
 
+## Docker
+The application contains a docker file, if you want to go up in a container, use the command below for:
+
+Create Image
+> docker build -t api-pokedex-nodejs:latest .   
+
+Create Container
+>docker run --name api-pokedex-nodejs-container -p 3000:3000 api-pokedex-nodejs:latest  
 
 ## Copyright Notice
 
