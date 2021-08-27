@@ -2,6 +2,7 @@
 This repository demonstrates a service developed for
 consumer the data of Pokemons from the official [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
 
+#
 #### GET
 You can start here
 >http://localhost:3000/pokedex/v1
@@ -36,7 +37,7 @@ You can access the link to demonstrate the data by passing the pokemon type as a
 
 > http://localhost:3000/pokedex/v1/type/Water
 
-
+#
 ## Docker
 The application contains a docker file, if you want to go up in a container, use the command below for:
 
@@ -45,6 +46,13 @@ Create Image
 
 Create Container
 >docker run --name api-pokedex-nodejs-container -p 3000:3000 api-pokedex-nodejs:latest  
+
+#
+## Docker Hub
+The image is hosted on the docker hub, enter the command below to download and run the image in a container
+
+>docker run --name api-pokedex-nodejs-container -p 3000:3000 gianeric08/api-pokedex-nodejs:latest
+
 
 ## Copyright Notice
 
