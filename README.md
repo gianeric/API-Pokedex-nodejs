@@ -1,5 +1,6 @@
 # API Pokedex nodejs
-This repository demonstrates a service developed by consuming the data of Pokemons from the official [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
+This repository demonstrates a service developed for
+consumer the data of Pokemons from the official [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page)
 
 #### GET
 You can start here
